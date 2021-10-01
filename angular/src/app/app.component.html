@@ -1,0 +1,25 @@
+
+<div class="container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th *ngFor="let column of columns">
+        {{column.header}}
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of flores">
+      <td>
+        {{row['nombreVariedad']}}
+      </td>
+      <td>
+        <img src="{{row.imgVariedad}}" alt="" width="20%">
+      </td>
+      <td>
+        {{row.grupoVariedad.nombreComunGrupoVariedad}}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
